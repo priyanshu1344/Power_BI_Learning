@@ -1,0 +1,22 @@
+Time Intelligence Functions = 
+var DATEADD_ = CALCULATE([Total Revenue],  DATEADD(CalendarDim[Date], -1, MONTH))
+var DATESBETWEEN_ = CALCULATE([Total Revenue],  DATESBETWEEN(CalendarDim[Date],FIRSTDATE(CalendarDim[Date]),LASTDATE(CalendarDim[Date] )))
+var DATEDIFF_ = DATEDIFF(FIRSTDATE(CalendarDim[Date]), LASTDATE(CalendarDim[Date]), DAY)
+var DATESMTD_ = CALCULATE([Total Revenue],  DATESMTD(CalendarDim[Date]))
+var DATESQTD_ = CALCULATE([Total Revenue],  DATESQTD(CalendarDim[Date]))
+var DATESYTD_ = CALCULATE([Total Revenue],  DATESYTD(CalendarDim[Date]))
+
+var DATESINPERIOD_ = CALCULATE([Total Revenue],  DATESINPERIOD(CalendarDim[Date],DATE(2020,12,1), 10, DAY))
+
+var ENDOFMONTH_ = ENDOFMONTH(CalendarDim[Date])
+var ENDOFQUARTER_ = ENDOFQUARTER(CalendarDim[Date])
+var ENDOFYEAR_ = ENDOFYEAR(CalendarDim[Date])
+
+var NEXTQUARTER_ = NEXTQUARTER(CalendarDim[Date])
+var NEXTDAY_ = NEXTDAY(CalendarDim[Date])
+var NEXTMONTH_ = NEXTMONTH(CalendarDim[Date])
+var PREVIOUSMONTH_ = PREVIOUSMONTH(CalendarDim[Date])
+var SAMEPERIODLASTYEAR_ = SAMEPERIODLASTYEAR(CalendarDim[Date])
+
+RETURN
+ENDOFMONTH_

@@ -1,0 +1,27 @@
+Text Functions = 
+var txt1 = "Rohit"
+var txt2 = "Agrawal"
+var txt3 = "  Agrawal  "
+var txt4 = "RajeshBhonsle"
+var BLANK_ = BLANK()
+var CODE_ = UNICODE("M")
+var COMBINEVALUES_ = COMBINEVALUES("-", txt1, txt2)
+var CONCATENATE_ = CONCATENATE(txt1, txt2)
+//var CONCATENATEX_ = CONCATENATEX()
+var FIND_ = FIND("h",txt1)
+//var finda_= FIND("a",txt3)
+var FORMAT_ = FORMAT(TODAY(), "MMM-yy")
+var LEFT_ = LEFT(txt1,2)
+var LEN_ = LEN(txt1)
+var LOWER_ = LOWER(txt1)
+var MID_ = MID(txt1,2,3)
+var REPLACE_ = REPLACE(txt1,1,2,"Rh")
+var RIGHT_ = RIGHT(txt1,2)
+var SEARCH_ = SEARCH("a",txt2)
+var SUBSTITUTE_ = SUBSTITUTE(txt1,"R","M")
+var TRIM_ = TRIM(txt4)
+var UNICHAR_ = UNICHAR(77)
+var UPPER_ = UPPER(txt1)
+var VALUE_ = VALUE(txt1)
+
+RETURN CONCATENATE_
